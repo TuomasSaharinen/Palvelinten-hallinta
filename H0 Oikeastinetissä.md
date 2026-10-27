@@ -15,3 +15,11 @@ Partanen 2025 Harjoitus 5
 - Namecheapista saa halpoja domaineja
 - Miksi alidomaineja tarvitaan?
 
+
+
+Lähteet: 
+https://github.com/punnalathomas/linux-course/blob/main/h1-installing-linux.md Luettu 23.10.2026
+https://github.com/AONCODES/linux-course/blob/main/h4.md Luettu 23.10.2026
+https://partanennn.github.io/linux-servers/practices/fifth-week.html Luettu 23.10.2026
+Google gemini
+https://linuxcapable.com/how-to-install-apache-on-debian-linux/ Luettu 23.10.2026
