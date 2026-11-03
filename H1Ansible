@@ -1,4 +1,20 @@
 X)
 
 
-A) Linkki raporttiin jossa tämä tehty:
+A) Linkki raporttiin jossa tämä tehty: https://github.com/TuomasSaharinen/Palvelinten-hallinta/blob/main/H0%20Oikeastinetiss%C3%A4.md
+
+
+
+B) Sshsecrets, tein tämän seuraamalla Karvisen 2026 : SSH Public key - login without password (https://terokarvinen.com/ssh-public-key-login-without-password/)
+ohjetta. Ensimmäisenä suoritin komennot 
+sudo apt-get update
+sudo apt-get -y install ssh
+jotta sain SSH ladattua ja komennolla
+sudo systemctl enable --now ssh
+sain SSH käyttöön. Tämän jälkeen kokeilin SSH:n toimivuutta "ssh localhost" ja sitten "W" näin että olin kahdesti sisällä ja toinen oli SSh:lla. 
+Seuraavaksi "Exit" suljin SSH yhteyden.
+C)Näiden jälkeen automatisoimme SSH kirjautumisen luomalla avainparin komennolla "ssh-keygen" ja kopion sen localhostille "ssh-copy-id localhost" 
+jonka avulla kun suorittaa komennon ssh localhost on kirjautuminen automaattinen.
+SSh-demonin tekeminen oli suht helppoa ja suoraviivaista kun seurasin ohjeita. Itse en tässä törmännyt mihinkään ongelmiin.
+
+D)
