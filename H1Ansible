@@ -1,9 +1,14 @@
-X)
-
+X)Hello ansible
+- hosts.ini tiedostoon lista isäntä koneista
+- site.yml määrittää roolit mitkä ajetaan millekkin koneelle
+- ansible toimii SSH kautta
+- Infrastruktuuri koodina
+SSH public key
+- Ssh on yleisin tapa kirjautua servereille
+- ssh-keygen luo avainparin
+- ssh-copy-id kopio sen
 
 A) Linkki raporttiin jossa tämä tehty: https://github.com/TuomasSaharinen/Palvelinten-hallinta/blob/main/H0%20Oikeastinetiss%C3%A4.md
-
-
 
 B) Sshsecrets, tein tämän seuraamalla Karvisen 2026 : SSH Public key - login without password (https://terokarvinen.com/ssh-public-key-login-without-password/)
 ohjetta. Ensimmäisenä suoritin komennot 
@@ -17,4 +22,54 @@ C)Näiden jälkeen automatisoimme SSH kirjautumisen luomalla avainparin komennol
 jonka avulla kun suorittaa komennon ssh localhost on kirjautuminen automaattinen.
 SSh-demonin tekeminen oli suht helppoa ja suoraviivaista kun seurasin ohjeita. Itse en tässä törmännyt mihinkään ongelmiin.
 
-D)
+D) Aloitin lataamalla ansiblen komennolla
+  sudo apt-get install ansible micro bash-completion tree
+Tämän komennon löysin Karvinen 2026: Hello ansible (https://terokarvinen.com/hello-ansible/)
+Kun Ansible oli ladattu onnistuneesti tein Ansiblelle kansion jatkoa varten, tähän käytin komentoja
+  mkdir ansible/
+  cd ansible/
+kun kansio oli luotu tein micro:lla teksitiedoston johon listasin "hostit" 
+  micro hosts.ini
+  localhost
+ja tarkistin komennolla cat hosts.ini .
+ansible all -a 'uptime' -i hosts.ini komennosta sain virhe ilmoituksen, saman kun Karvisen hello ansible raportissa.
+Sen sain korjattua kirjoittamalla micro hosts.ini tiedostoon
+[all:vars]
+ansible-python-interpreter=/usr/bin/python3
+ja kun tallenuksen jälkeen suoritin saman ansible all -a 'uptime' hosts.ini oli python virheilmoitus poissa.
+Sitten tein ansiblelle config tiedoston jonka avulla ei tarvitse kirjoittaa -i hosts.ini joka kerta.
+  micro ansible.cfg
+tiedoston sisään kirjoitin
+  [defaults]
+  inventory = hosts.ini
+sitten tallensin ja poistuin micro editorista ja nyt komennolla 
+  ansible all -a "uptime" 
+näin localhostin uptimen ilman virheilmoituksia tai että jouduin lisäämään -i hosts.ini
+Sitten aloin antamaan rooleja site.yml avulla
+  micro site.yml
+- hosts: all
+  roles:
+    - hello
+kun suoritin  
+ansible-playbook site.yml 
+sain virhe ilmoituksen että roolia hello ei ole vielä olemassa, joten seuraavaksi lähdin sitä korjaamaan.
+Ensin piti luoda rooleille kansiot
+  mkdir -p roles/hello/tasks/
+  micro -p roles/hello/tasks/
+    - copy:
+        dest: /tmp/hello-ansible
+        content: "Hello-world"
+  cat roles/hello/tasks/main.yml
+
+Ja kun suoritin ansible-playbook site.yml näyttää että 1 muutos on tehty.
+ja komennolla 
+  ssh localhost 'cat /tmp/hello-ansible'
+Hello world.
+
+Tehtävä oli suhteellisen suoraviivainen ja helppo tehdä kun seurasin vain karvisen 2026: hello ansible raporttia.
+Kuvia kaikista tehtävä vaiheista löytyy kansiostani "kuvat"
+
+Lähteet: 
+https://terokarvinen.com/hello-ansible/ Karvinen 2026 hello ansible
+https://terokarvinen.com/ssh-public-key-login-without-password/ karvinen 2026 SSH public key
+
