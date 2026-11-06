@@ -47,7 +47,16 @@ C) Asensin kaksi pakettia Curl ja Git muokkaamalla main.yml tiedostoon
 
 Kuvassa näkyvät alimmat kohdat, apuna käytin Ansible community documentation nettisivua sekä Google Gemini tekoälyä. https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/apt_module.html
 
-D)
+D) 
+Loin monirivisen teksti tiedoston Ansiblen Copy työkalulla ja asetin sille 0600 oikeudet eli vain tiedoston omistaja voi lukea tai kirjoittaa siihen.
+<img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/d5c4477d-475b-4f61-ad20-7b924299c453" />
+
+
+<img width="791" height="409" alt="image" src="https://github.com/user-attachments/assets/d2a87ab2-f312-4235-8247-12134c0574f5" />
+
+<img width="811" height="433" alt="image" src="https://github.com/user-attachments/assets/ae025d98-844c-4e9c-ac36-20054d161f56" />
+
+
 
 
 E)
