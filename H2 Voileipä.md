@@ -49,14 +49,27 @@ Kuvassa näkyvät alimmat kohdat, apuna käytin Ansible community documentation 
 
 D) 
 Loin monirivisen teksti tiedoston Ansiblen Copy työkalulla ja asetin sille 0600 oikeudet eli vain tiedoston omistaja voi lukea tai kirjoittaa siihen.
+
 <img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/d5c4477d-475b-4f61-ad20-7b924299c453" />
+
+Sijoitin tiedoston anteron kotihakemistoon ja omistajaksi ja omistajaryhmäksi laitoin anteron.
 
 
 <img width="791" height="409" alt="image" src="https://github.com/user-attachments/assets/d2a87ab2-f312-4235-8247-12134c0574f5" />
 
 <img width="811" height="433" alt="image" src="https://github.com/user-attachments/assets/ae025d98-844c-4e9c-ac36-20054d161f56" />
 
+suoritin komennot "ansible-playbook site.yml ja sen jälkeen kokeilin ls -l /home/antero/tervehdys.txt komentoa joka palautti virheen " permission denied", koska tiedosto sijaitsee /home/antero , ei tavallisilla käyttäjillä ole pääsyä sinne joten kun kokeilin uudestaan sudo ls ... tuloste oli:
+
+<img width="497" height="27" alt="image" src="https://github.com/user-attachments/assets/106c1420-3ffb-4688-8421-6f6fd356933c" />
+
+Apuna käytin ansible community documentation ansible.builtin.copy module - Copy files to remote locations. sivua.
+
+
+https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/copy_module.html
 
 
 
-E)
+
+
+E) TImezone
