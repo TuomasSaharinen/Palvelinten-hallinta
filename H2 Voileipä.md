@@ -73,3 +73,11 @@ https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/cop
 
 
 E) TImezone
+
+<img width="247" height="98" alt="image" src="https://github.com/user-attachments/assets/cfdd7a06-ad1d-45f8-a8a3-8b9e08c31a6d" />
+
+<img width="860" height="442" alt="image" src="https://github.com/user-attachments/assets/07b68eea-4a94-4b87-80c9-749fa0cde93e" />
+
+<img width="451" height="150" alt="image" src="https://github.com/user-attachments/assets/3fad4312-e6e5-423f-b8ae-649095ba8fc1" />
+
+ansible-doc timezone
