@@ -41,8 +41,13 @@ roles/antero oikeaan kansioon.
 Myös kohtasin jonkin verran kirjoitusvirheitä nano tiedostoissa.
  
 
-C)
+C) Asensin kaksi pakettia Curl ja Git muokkaamalla main.yml tiedostoon
+
+<img width="739" height="343" alt="image" src="https://github.com/user-attachments/assets/702b1ac3-4992-41f0-aaac-38b89a0d0b9d" />
+
+Kuvassa näkyvät alimmat kohdat, apuna käytin Ansible community documentation nettisivua sekä Google Gemini tekoälyä. https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/apt_module.html
 
 D)
+
 
 E)
