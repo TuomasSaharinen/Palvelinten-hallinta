@@ -13,7 +13,8 @@ Karvinen 2026: Passwordless Sudo with Ansible
   - Ensimmäisellä kerralla ansiblelle pitää antaa salasana -K (--ask-become-password)
 
 
-A)
+A) <img width="416" height="261" alt="image" src="https://github.com/user-attachments/assets/800034d1-878e-421f-ab33-627336703d8b" />
+
 
 B)
 
