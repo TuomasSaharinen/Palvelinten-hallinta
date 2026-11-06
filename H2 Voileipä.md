@@ -24,12 +24,20 @@ Sudo ilman salasanaa
 Seurasin tehtävässä Karvinen 2026: Passwordless Sudo with Ansible ohjetta. 
 Ensin loin main.yml tiedostoon tarvittavan ryhmän ja käyttäjän ja asetin tarvittavat tiedot.
 <img width="818" height="370" alt="image" src="https://github.com/user-attachments/assets/ec7fa164-8e51-43d9-9f7a-60c231f0eebc" />
+
 Tämän jälkeen muokkasin site.yml tiedostoa jotta saa pääkäyttäjä oikeudet käyttöön
+
 <img width="232" height="146" alt="image" src="https://github.com/user-attachments/assets/24a7c750-07f1-45eb-a58d-9a00b1b3b07f" />
+
 määritin Ansiblen käyttämään anteroa oletuksena, jolla ratkaisin ongleman "missing sudo password" 
+
 <img width="151" height="115" alt="image" src="https://github.com/user-attachments/assets/4c37cfb7-ec39-4fe1-bff0-a2090bb04d52" />
-Kohtasin ongelmia tehtävässä kun esimerkiksi koitin suorittaa "ansible-playbook site.yml" ja vastaus oli että tiedosta ei löydy, mutta tästä selvisin siirtämällä roles/antero oikeaan kansioon.
+
+Kohtasin ongelmia tehtävässä kun esimerkiksi koitin suorittaa "ansible-playbook site.yml" ja vastaus oli että tiedosta ei löydy, mutta tästä selvisin siirtämällä 
+roles/antero oikeaan kansioon.
+
 <img width="552" height="458" alt="image" src="https://github.com/user-attachments/assets/4a936efc-c126-4cbd-9897-fb0afd9c3eb0" />
+
 Myös kohtasin jonkin verran kirjoitusvirheitä nano tiedostoissa.
  
 
