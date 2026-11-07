@@ -28,7 +28,24 @@ Ansible-doc apt
   - state: paketin tila, present, absent tai latest
 
 Ansible-doc file
-  - 
+  - Luodaan hakemistoja ja tiedostoja
+  - path: hallinnoitavan tiedoston tai hakemiston polku
+  - recurse:Määrittää, asetetaanko annetut oikeudet rekursiivisesti koko hakemistorakenteelle
+  - src: kohteen polku josta tiedosto tai hakemisto on
+  - owner, group ja mode, omistaja, omistaja ryhmä ja oikeuksien tila esim 0644
+
+Ansible-doc user
+  - moduuli hallinnoi järjestelmän käyttäjätilejä ja niiden ominaisuuksia, kuten ryhmiä, kotihakemistoja
+  - name: halinnoitavan käyttäjän nimi
+  - create_home: luodaanko kotihakemisto jos ei ole valmiiksi
+  - groups: lista ryhmistä johon kuuluu
+  - state: pidetäänkö käyttäjä present eli olemassa vai absent eli poistetaan
+  - system: luo tilin järjestelmäkäyttäjänä
+
+Ansible-doc authorized_key
+  - lisää tai poistaa SSH-julkisia avaimia määritetyn käyttäjätilin tiedostoihin
+  - user: käyttäjä jonka avaimia muokataan
+  - key: SSH avain
 
 
 A) <img width="416" height="261" alt="image" src="https://github.com/user-attachments/assets/800034d1-878e-421f-ab33-627336703d8b" />
