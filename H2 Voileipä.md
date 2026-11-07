@@ -12,6 +12,24 @@ Karvinen 2026: Passwordless Sudo with Ansible
   - Kokeile manuaalisesti ennen kuin automatisoit
   - Ensimmäisellä kerralla ansiblelle pitää antaa salasana -K (--ask-become-password)
 
+Ansible-doc copy
+  - nimensä mukaan saadan kopiomalla siierrettyä tiedostoja paikalliselta tai etäkoneelta kohdekoneen hakemistoon
+  - määritetään dest: tiedoston "päämäärä" tai kohdepolku
+  - owner: Tiedoston omistaja
+  - Group: omistaja ryhmä
+  - content: Mahdollistaa tiedon kirjoittamisen tehtävä määrittelyssä
+  - src: kopio olemassa olevan tiedoston
+  - mode: käyttäjän määrittämät oikeudet
+    
+
+Ansible-doc apt
+  - Hallinnoi paketteja
+  - name: paketin nimi
+  - state: paketin tila, present, absent tai latest
+
+Ansible-doc file
+  - 
+
 
 A) <img width="416" height="261" alt="image" src="https://github.com/user-attachments/assets/800034d1-878e-421f-ab33-627336703d8b" />
 
@@ -72,12 +90,20 @@ https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/cop
 
 
 
-E) TImezone
+E) Debug
+Tehtävässä valitsin ansiblen ydin moduuleista debugin, jonka avulla voi esim saada vahvistusviestin tulostettua suorituksen jälkeen.
 
-<img width="247" height="98" alt="image" src="https://github.com/user-attachments/assets/cfdd7a06-ad1d-45f8-a8a3-8b9e08c31a6d" />
+<img width="206" height="89" alt="image" src="https://github.com/user-attachments/assets/856198a9-f6dd-437f-a6b1-1622f1a9a4fc" />
 
-<img width="860" height="442" alt="image" src="https://github.com/user-attachments/assets/07b68eea-4a94-4b87-80c9-749fa0cde93e" />
+Lisäsin roles/antero/tasks/main.yml nano tiedostoon kuvassa näkyvän pätkän.
 
-<img width="451" height="150" alt="image" src="https://github.com/user-attachments/assets/3fad4312-e6e5-423f-b8ae-649095ba8fc1" />
+<img width="833" height="458" alt="image" src="https://github.com/user-attachments/assets/d1c77f94-5a53-40ce-8947-1a723eeaacc5" />
 
-ansible-doc timezone
+Ja kun playbookin suoritti oli vahvistus viesti mukana.
+
+ansible-doc debug
+
+
+https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/debug_module.html
+
+
