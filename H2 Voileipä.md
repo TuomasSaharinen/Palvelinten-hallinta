@@ -123,4 +123,26 @@ ansible-doc debug
 
 https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/debug_module.html
 
+Lähteet:
 
+Red Hat Ansible Documentation:
+
+copy-moduuli: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+
+apt-moduuli: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+
+file-moduuli: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file_module.html
+
+user-moduuli: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html
+
+debug-moduuli: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html
+
+chmod(1): https://man7.org/linux/man-pages/man1/chmod.1.html
+
+getent(1): https://man7.org/linux/man-pages/man1/getent.1.html
+
+Karvinen 2026: https://terokarvinen.com/passwordless-sudo-with-ansible/
+
+Karvinen 2026: https://terokarvinen.com/passwordless-sudo/
+
+Munroe 2026: https://xkcd.com/149/
