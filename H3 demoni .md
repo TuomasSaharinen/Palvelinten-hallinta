@@ -74,10 +74,31 @@ ja tämän jälkeen luon ansiblelle hakemistot ja tarvittavat alihakemistot
 
 <img width="483" height="44" alt="image" src="https://github.com/user-attachments/assets/1186321c-6f51-4bc2-8286-413eb83968a2" />
 
+sitten loin ansiblelle oman templaten jonka perusteella automatisointi toimii
+
+<img width="336" height="227" alt="image" src="https://github.com/user-attachments/assets/f1de429d-cd32-4fe5-ad68-ebfd1d04df36" />
+
+Määritin tehtävät nginxin roolille
+
+
+<img width="713" height="431" alt="image" src="https://github.com/user-attachments/assets/9bbaa933-54c3-4336-a3e1-392cd8629ddf" />
+
+Ja sitten määritin handlerit
+
+<img width="591" height="275" alt="image" src="https://github.com/user-attachments/assets/df545777-a0db-442f-b6b8-a041d71d7ce9" />
+
+ja uuden playbookin
+
+<img width="243" height="142" alt="image" src="https://github.com/user-attachments/assets/f709854c-c288-465d-a1f9-258ad25beee1" />
+
+Playbookin kanssa kohtasin muutamia ongelmia tiedostojen välilyöntimäärissä sekä kirjoitusvirheitä, mutta niiden muokkauksen jälkeen, kun playbook antoi tulosteen että password is required
+
+<img width="840" height="204" alt="image" src="https://github.com/user-attachments/assets/834d5ac0-b74e-4be0-9035-9e52ab00be6b" />
 
 
 
 Lähteet:
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-debian-11
 https://nginx.org/en/docs/beginners_guide.html
 https://terokarvinen.com/apache-ansible/
 https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
