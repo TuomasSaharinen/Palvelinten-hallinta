@@ -50,4 +50,36 @@ Tämän jälkeen sallin turva-asetuksista kotihakemiston lukemisen menemällä a
 Uudelleen käynnistyksen jälkeen yhteyden otolla sain vastauksen 
 
 <img width="339" height="58" alt="image" src="https://github.com/user-attachments/assets/62d013b1-5e0f-4436-8c2a-85d4657667b3" />
- 
+
+B) Moottorix
+
+Aloitin sammuttamalla apachen ja sen jälkeen lataamalla nginx
+
+<img width="816" height="411" alt="image" src="https://github.com/user-attachments/assets/af046a09-543e-46ef-93b6-3258867171f8" />
+
+Ohjasin nginx kotihakemistooni samalla tavalla kuin apachen
+
+<img width="517" height="431" alt="image" src="https://github.com/user-attachments/assets/9f906527-4524-49ea-9fc5-14658a06cd40" />
+
+taas yhteydenotolla tulostui sama apassi toimii joten onnistuin.
+
+<img width="515" height="133" alt="image" src="https://github.com/user-attachments/assets/217fc830-6305-4bb4-b0f9-893a3fface61" />
+
+C) Automoottorix
+aloitin poistamalla vanhan nginx ja sen asennustiedostot
+
+<img width="511" height="255" alt="image" src="https://github.com/user-attachments/assets/9d33f347-9a7a-4ac1-8e63-cd6cc3ca8e1f" />
+
+ja tämän jälkeen luon ansiblelle hakemistot ja tarvittavat alihakemistot
+
+<img width="483" height="44" alt="image" src="https://github.com/user-attachments/assets/1186321c-6f51-4bc2-8286-413eb83968a2" />
+
+
+
+
+Lähteet:
+https://nginx.org/en/docs/beginners_guide.html
+https://terokarvinen.com/apache-ansible/
+https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
+https://news.ycombinator.com/item?id=46449852
+Ansible documentaatio sivut
