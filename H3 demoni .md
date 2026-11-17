@@ -95,7 +95,12 @@ Playbookin kanssa kohtasin muutamia ongelmia tiedostojen välilyöntimäärissä
 
 <img width="840" height="204" alt="image" src="https://github.com/user-attachments/assets/834d5ac0-b74e-4be0-9035-9e52ab00be6b" />
 
+Pääsi siitä ympäri lisäämällä -K komennon loppuun ( ask-become-pass)
 
+
+<img width="411" height="319" alt="image" src="https://github.com/user-attachments/assets/f665622d-6f74-412a-88c9-0cb4173d563e" />
+
+Ja kaikki toimii
 
 Lähteet:
 https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-debian-11
