@@ -57,7 +57,21 @@ ja tämän jälkeen ajoin playbookin ja testasin toimivuuden ja palautuksena tul
 
 <img width="415" height="243" alt="image" src="https://github.com/user-attachments/assets/57e89ea8-11ea-4b15-bf52-5c7c4b4c814a" />
 
-c)
+c) Asetus
+Muutin asetustiedoston palauttamaa tekstiä
+
+<img width="536" height="98" alt="image" src="https://github.com/user-attachments/assets/fe078aaa-a73e-49c7-bdfa-54fbc23a9562" />
+
+jonka jälkeen ajoin playbookin jossa tuli 2 muutosta
+
+<img width="625" height="232" alt="image" src="https://github.com/user-attachments/assets/e1de5f37-554f-4a70-89ea-50e0164459a9" />
+
+ja sitten vielä curl komennolla testaus
+
+<img width="255" height="40" alt="image" src="https://github.com/user-attachments/assets/98e5ed18-554a-4acd-8b27-b64787594765" />
+
+D)
+
 
 
 
