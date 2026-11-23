@@ -13,4 +13,22 @@ Karvinen 2023: Configuration Management of Distributed Systems over Unreliable a
   - Omahuomio: Hieno huomata että pääasiassa voi pärjätä samalla mallilla jota me harjoittelemme Package-file-service
 
 4.12.3.1 Dependencies Between Main Functions
-  -
+  - Yleisimmät toiminnot (package, file, service, user, group)
+  - Idempotenssi toteutetaan yksinkertaisesti, muutoksia tehdään vain jos systeemi ei ole oikeassa tilassa.
+  - Ensin käsin, sitten automatisoidaan
+
+A) Räpylä
+
+Aloitin Caddyn asennuksen sammuttamalla Nginx:in jotta saan portin 80 vapautettua
+
+<img width="563" height="99" alt="image" src="https://github.com/user-attachments/assets/7810d632-f7d7-46a9-97a0-e19f941f609c" />
+
+Sitten asensin Caddyn ja päivitin (sudo apt update)
+
+<img width="605" height="384" alt="image" src="https://github.com/user-attachments/assets/6ede18b0-fa61-48dd-8d05-52473ef79bad" />
+
+Sitten testasin toimivuuden
+
+<img width="434" height="230" alt="image" src="https://github.com/user-attachments/assets/2a39a054-806f-4c74-aae1-217a54563dbf" />
+
+B) Automatisointi
