@@ -70,7 +70,20 @@ ja sitten vielä curl komennolla testaus
 
 <img width="255" height="40" alt="image" src="https://github.com/user-attachments/assets/98e5ed18-554a-4acd-8b27-b64787594765" />
 
-D)
+D) Remontti
+Rikon asennuksen poistamalla caddyn asetukset
+
+<img width="440" height="173" alt="image" src="https://github.com/user-attachments/assets/3c0d62f0-40eb-4d30-8a08-c25073201719" />
+
+palvelin on rikki jonka todistin curl komennolla
+
+<img width="460" height="24" alt="image" src="https://github.com/user-attachments/assets/7f5e7f49-c18c-4f06-adaf-e7d9c4d818e7" />
+
+Sitten korjasin tilanteen ajamalla playbookin uudestaan ja todistamalla sen curl komennolla
+
+<img width="613" height="251" alt="image" src="https://github.com/user-attachments/assets/2f12f8e4-88bb-4059-b0d0-7aa99253f347" />
+
+E)
 
 
 
