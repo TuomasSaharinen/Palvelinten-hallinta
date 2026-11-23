@@ -32,3 +32,38 @@ Sitten testasin toimivuuden
 <img width="434" height="230" alt="image" src="https://github.com/user-attachments/assets/2a39a054-806f-4c74-aae1-217a54563dbf" />
 
 B) Automatisointi
+
+Aloitin luomalla tarvittavat alikansiot
+
+<img width="383" height="50" alt="image" src="https://github.com/user-attachments/assets/c4f5a72d-9c9a-4fa6-b53d-3357d9d8cfc3" />
+
+Tein mallipohjan jotta testauksen yhteydessä portista 80 palautuu caddy toimii!
+
+<img width="463" height="100" alt="image" src="https://github.com/user-attachments/assets/ea538901-a47f-4fa0-83a6-45b37a0fe536" />
+
+Loin tehtävät
+
+<img width="176" height="260" alt="image" src="https://github.com/user-attachments/assets/a3330df8-67fe-4d05-b8bc-43cd8a49a9df" />
+
+Jonka jälkeen loin handlerin
+
+<img width="461" height="107" alt="image" src="https://github.com/user-attachments/assets/21c51e42-3973-43a0-99ca-fb8678412d45" />
+
+ja sitten loin playbookin
+
+<img width="469" height="116" alt="image" src="https://github.com/user-attachments/assets/f774212a-e278-45b1-bb51-0193116c699c" />
+
+ja tämän jälkeen ajoin playbookin ja testasin toimivuuden ja palautuksena tuli 
+
+<img width="415" height="243" alt="image" src="https://github.com/user-attachments/assets/57e89ea8-11ea-4b15-bf52-5c7c4b4c814a" />
+
+c)
+
+
+
+Lähteet:
+https://www.golinuxcloud.com/ansible-idempotency/ (luettu 23.11.26)
+https://westminsterresearch.westminster.ac.uk/item/w7vvz/configuration-management-of-distributed-systems-over-unreliable-and-hostile-networks (luettu 23.11.26)
+https://docs.ansible.com/projects/ansible/3/user_guide/playbooks_handlers.htm (luettu 23.11.26)
+
+
