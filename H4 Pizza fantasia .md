@@ -83,7 +83,11 @@ Sitten korjasin tilanteen ajamalla playbookin uudestaan ja todistamalla sen curl
 
 <img width="613" height="251" alt="image" src="https://github.com/user-attachments/assets/2f12f8e4-88bb-4059-b0d0-7aa99253f347" />
 
-E)
+E) Idempotentti
+todistin että tilani on idempotentti ajamalla playbookin uudestaan ilman että tulee muutoksia.
+Ansible siis tarkisti nykytilan ja totesi sen vastaavan tavoite tilaa joten ei muutoksia tehty.
+
+<img width="594" height="233" alt="image" src="https://github.com/user-attachments/assets/95178416-f8ae-46f0-b3c0-d82ba9b4ed9a" />
 
 
 
@@ -92,5 +96,5 @@ Lähteet:
 https://www.golinuxcloud.com/ansible-idempotency/ (luettu 23.11.26)
 https://westminsterresearch.westminster.ac.uk/item/w7vvz/configuration-management-of-distributed-systems-over-unreliable-and-hostile-networks (luettu 23.11.26)
 https://docs.ansible.com/projects/ansible/3/user_guide/playbooks_handlers.htm (luettu 23.11.26)
-
+https://caddyserver.com/docs/ (luettu 23.11.26)
 
